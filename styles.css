@@ -1,0 +1,49 @@
+/* Ensuring high specificity and use of important to override default styles */
+
+html body {
+    background-color: var(--primary-color) !important; /* Bright blue */
+    color: #ffffff !important; /* White text for better contrast */
+}
+
+/* More specific selectors for links */
+html body a {
+    color: var(--accent-color) !important; /* Vibrant green */
+    text-decoration: underline;
+}
+
+/* Navigation and header */
+nav, .navbar {
+    background-color: var(--secondary-color) !important; /* Darker shade for navigation */
+    border-bottom: 2px solid var(--accent-color) !important;
+}
+
+/* Footer customization */
+footer, .footer {
+    background-color: var(--secondary-color) !important;
+    color: #ffffff !important;
+    padding: 20px 0;
+}
+
+/* Overriding heading colors */
+html body h1, html body h2, html body h3, html body h4 {
+    color: var(--primary-color) !important;
+}
+
+/* Buttons styling to match the theme */
+button, .btn {
+    background-color: var(--accent-color) !important;
+    color: #ffffff !important;
+    border: none;
+}
+
+/* Table styles */
+table, th, td {
+    border: 1px solid var(--secondary-color) !important;
+}
+
+/* Define CSS Variables for colors */
+:root {
+    --primary-color: #007bff;   /* Blue */
+    --secondary-color: #343a40; /* Dark gray */
+    --accent-color: #28a745;    /* Green */
+}
